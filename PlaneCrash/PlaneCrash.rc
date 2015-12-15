@@ -17,7 +17,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 中文(简体，中国) resources
+// Chinese (Simplified, PRC) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
@@ -52,9 +52,9 @@ BEGIN
     "\r\n"
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
     "LANGUAGE 4, 2\r\n"
-    "#include ""res\\PlaneCrash.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
-    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
-    "#include ""l.CHS\\afxprint.rc""    // 打印/打印预览资源\r\n"
+    "#include ""res\\PlaneCrash.rc2""  // ·? Microsoft Visual C++ ±à?-μ?×ê?′\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ±ê×?×é?t\r\n"
+    "#include ""l.CHS\\afxprint.rc""    // ′òó?/′òó??¤àà×ê?′\r\n"
     "#endif\r\n"
     "\0"
 END
@@ -70,7 +70,9 @@ END
 // Icon with lowest ID value placed first to ensure application icon
 // remains consistent on all systems.
 IDR_MAINFRAME           ICON                    "res\\PlaneCrash.ico"
+
 IDR_PlaneCrashTYPE      ICON                    "res\\PlaneCrashDoc.ico"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -78,12 +80,19 @@ IDR_PlaneCrashTYPE      ICON                    "res\\PlaneCrashDoc.ico"
 //
 
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
 IDB_ME                  BITMAP                  "res\\me.bmp"
+
 IDB_BALL                BITMAP                  "res\\ball.BMP"
+
 IDB_BOMB                BITMAP                  "res\\bomb.bmp"
+
 IDB_ENEMY               BITMAP                  "res\\enemy.bmp"
+
 IDB_EXPLOSION           BITMAP                  "res\\explosion.BMP"
+
 IDB_BG                  BITMAP                  "res\\bg.bmp"
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -371,7 +380,25 @@ BEGIN
     AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
 END
 
-#endif    // 中文(简体，中国) resources
+#endif    // Chinese (Simplified, PRC) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BG2                 BITMAP                  "res\\background.bmp"
+
+#endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

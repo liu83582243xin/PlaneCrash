@@ -22,6 +22,7 @@ public:
 // 重写
 public:
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图
+	void updateFrame(CDC * pDC);
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 protected:
 	virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
@@ -39,7 +40,11 @@ public:
 protected:
 	int offsetX;
 	int offsetY;
+	int m_bgOffsetY;
+
 	CRect m_client;
+	CDC *pMemCacheDc;
+	CClientDC *pClientDc;
 	CImage m_background;
 	Plane myPlane;
 

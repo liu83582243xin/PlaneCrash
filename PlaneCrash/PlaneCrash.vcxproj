@@ -218,6 +218,7 @@
     <None Include="res\PlaneCrash.rc2" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\background.bmp" />
     <Image Include="res\ball.BMP" />
     <Image Include="res\bg.bmp" />
     <Image Include="res\bitmap1.bmp" />

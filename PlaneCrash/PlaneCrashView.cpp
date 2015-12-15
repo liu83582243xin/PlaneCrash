@@ -44,7 +44,11 @@ CPlaneCrashView::~CPlaneCrashView()
 
 BOOL CPlaneCrashView::PreCreateWindow(CREATESTRUCT& cs)
 {
-	m_background.Load(_T("res\\bg.png"));
+	m_background.LoadFromResource(AfxGetInstanceHandle(), IDB_BG2);
+	m_bgOffsetY = 0;
+
+	//pMemCacheDc = new CDC;
+
 	return CView::PreCreateWindow(cs);
 }
 
@@ -57,14 +61,25 @@ void CPlaneCrashView::OnDraw(CDC* pDC)
 	if (!pDoc)
 		return;
 
+
 	GetClientRect(&this->m_client);
+
 	CDC m_cachedDc;
 	CBitmap m_cachedMap;
 	m_cachedDc.CreateCompatibleDC(pDC);
-	m_cachedMap.CreateCompatibleBitmap(pDC, m_client.Width(), m_client.Height());
+	m_cachedMap.CreateCompatibleBitmap(pDC, m_client.Width(), 1000);
 	m_cachedDc.SelectObject(&m_cachedMap);
+	if (m_bgOffsetY >= 0)
+	{
+		m_background.Draw(m_cachedDc, 0 ,0,m_client.Width(),m_client.Height(),0,m_bgOffsetY,m_client.Width(),500);
+		m_bgOffsetY -= 1;
+	}
+	else
+	{
+		m_bgOffsetY = 500;
+	}
 
-	m_background.Draw(m_cachedDc, m_client);
+
 
 	this->myPlane.Draw(&m_cachedDc, &m_client);
 
