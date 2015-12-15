@@ -80,10 +80,10 @@ IDR_PlaneCrashTYPE      ICON                    "res\\PlaneCrashDoc.ico"
 IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
 IDB_ME                  BITMAP                  "res\\me.bmp"
 IDB_BALL                BITMAP                  "res\\ball.BMP"
-IDB_BITMAP3             BITMAP                  "res\\bitmap1.bmp"
 IDB_BOMB                BITMAP                  "res\\bomb.bmp"
 IDB_ENEMY               BITMAP                  "res\\enemy.bmp"
 IDB_EXPLOSION           BITMAP                  "res\\explosion.BMP"
+IDB_BG                  BITMAP                  "res\\bg.bmp"
 
 /////////////////////////////////////////////////////////////////////////////
 //

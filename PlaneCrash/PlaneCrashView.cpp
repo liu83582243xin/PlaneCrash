@@ -46,7 +46,7 @@ CPlaneCrashView::~CPlaneCrashView()
 
 BOOL CPlaneCrashView::PreCreateWindow(CREATESTRUCT& cs)
 {
-
+	m_background.Load(_T("res\\bg.png"));
 	return CView::PreCreateWindow(cs);
 }
 
@@ -66,6 +66,7 @@ void CPlaneCrashView::OnDraw(CDC* pDC)
 	m_cachedMap.CreateCompatibleBitmap(pDC, m_client.Width(), m_client.Height());
 	m_cachedDc.SelectObject(&m_cachedMap);
 
+	m_background.Draw(m_cachedDc, m_client);
 
 	CBitmap bitmap;
 	bitmap.LoadBitmapW(IDB_ME);
