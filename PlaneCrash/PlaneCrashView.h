@@ -4,6 +4,7 @@
 
 #pragma once
 
+#include "Plane.h"
 
 class CPlaneCrashView : public CView
 {
@@ -40,6 +41,7 @@ protected:
 	int offsetY;
 	CRect m_client;
 	CImage m_background;
+	Plane myPlane;
 
 // 生成的消息映射函数
 protected:

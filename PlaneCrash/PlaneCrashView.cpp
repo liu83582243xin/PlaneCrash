@@ -36,8 +36,6 @@ END_MESSAGE_MAP()
 
 CPlaneCrashView::CPlaneCrashView()
 {
-	this->offsetX = 100;
-	this->offsetY = 100;
 }
 
 CPlaneCrashView::~CPlaneCrashView()
@@ -68,13 +66,7 @@ void CPlaneCrashView::OnDraw(CDC* pDC)
 
 	m_background.Draw(m_cachedDc, m_client);
 
-	CBitmap bitmap;
-	bitmap.LoadBitmapW(IDB_ME);
-
-	CImageList imageList;
-	imageList.Create(50, 60, ILC_COLOR8 | ILC_MASK, 1, 0);
-	imageList.Add(&bitmap, RGB(0, 0, 0));
-	imageList.Draw(&m_cachedDc, 0, CPoint(this->offsetX, this->offsetY), ILD_NORMAL);
+	this->myPlane.Draw(&m_cachedDc, &m_client);
 
 	pDC->BitBlt(0, 0, m_client.Width(), m_client.Height(), &m_cachedDc, 0, 0, SRCCOPY);
 
@@ -151,16 +143,16 @@ void CPlaneCrashView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	switch (nChar)
 	{
 	case VK_UP: 
-		this->offsetY -= 10;
+		this->myPlane.moveUp();
 		break;
 	case VK_DOWN:
-		this->offsetY += 10;
+		this->myPlane.moveDown();
 		break;
 	case VK_LEFT:
-		this->offsetX -= 10;
+		this->myPlane.moveLeft();
 		break;
 	case VK_RIGHT:
-		this->offsetX += 10;
+		this->myPlane.moveRight();
 		break;
 	default:
 		break;

@@ -190,6 +190,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Plane.h" />
     <ClInclude Include="PlaneCrash.h" />
     <ClInclude Include="PlaneCrashDoc.h" />
     <ClInclude Include="PlaneCrashView.h" />
@@ -199,6 +200,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Plane.cpp" />
     <ClCompile Include="PlaneCrash.cpp" />
     <ClCompile Include="PlaneCrashDoc.cpp" />
     <ClCompile Include="PlaneCrashView.cpp" />
