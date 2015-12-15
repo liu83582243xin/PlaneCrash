@@ -35,7 +35,8 @@
 
 
 
-
+#define GAME_CLIENT_WIDTH 800
+#define GAME_CLIENT_HEIGHT 600
 
 
 

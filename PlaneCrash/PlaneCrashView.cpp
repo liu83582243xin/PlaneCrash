@@ -81,7 +81,10 @@ void CPlaneCrashView::OnDraw(CDC* pDC)
 
 
 
-	this->myPlane.Draw(&m_cachedDc, &m_client);
+	//this->myPlane.Draw(&m_cachedDc, m_client);
+	//mPlaneEnyne.Draw(&m_cachedDc, m_client);
+	//mPlaneBoss.Draw(&m_cachedDc, m_client);
+	mGm.drawGameObjects(&m_cachedDc,m_client);
 
 	pDC->BitBlt(0, 0, m_client.Width(), m_client.Height(), &m_cachedDc, 0, 0, SRCCOPY);
 
@@ -135,6 +138,7 @@ CPlaneCrashDoc* CPlaneCrashView::GetDocument() const // 非调试版本是内联的
 
 void CPlaneCrashView::OnTimer(UINT_PTR nIDEvent)
 {
+	mGm.create();
 	Invalidate();
 	CView::OnTimer(nIDEvent);
 }
@@ -146,8 +150,14 @@ int CPlaneCrashView::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	if (CView::OnCreate(lpCreateStruct) == -1)
 		return -1;
 
+	PlaneEnyne::loadImage();
+	PlaneBoss::loadImage();
+	Explosion::loadImage();
+	Ball::loadImage();
+	Bomb::loadImage();
 
-	SetTimer(1,	16, NULL);
+
+	SetTimer(1,	30 , NULL);
 
 	return 0;
 }
@@ -158,17 +168,19 @@ void CPlaneCrashView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 	switch (nChar)
 	{
 	case VK_UP: 
-		this->myPlane.moveUp();
+		mGm.getPlayer()->moveUp();
 		break;
 	case VK_DOWN:
-		this->myPlane.moveDown();
+		mGm.getPlayer()->moveDown();
 		break;
 	case VK_LEFT:
-		this->myPlane.moveLeft();
+		mGm.getPlayer()->moveLeft();
 		break;
 	case VK_RIGHT:
-		this->myPlane.moveRight();
+		mGm.getPlayer()->moveRight();
 		break;
+	case VK_SPACE:
+		mGm.createBomb();
 	default:
 		break;
 	}

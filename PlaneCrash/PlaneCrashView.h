@@ -4,7 +4,13 @@
 
 #pragma once
 
-#include "Plane.h"
+#include "PlanePlayer.h"
+#include "PlaneEnyne.h"
+#include "PlaneBoss.h"
+#include "Explosion.h"
+#include "Ball.h"
+#include "Bomb.h"
+#include "GameManager.h"
 
 class CPlaneCrashView : public CView
 {
@@ -22,7 +28,6 @@ public:
 // 重写
 public:
 	virtual void OnDraw(CDC* pDC);  // 重写以绘制该视图
-	void updateFrame(CDC * pDC);
 	virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 protected:
 	virtual BOOL OnPreparePrinting(CPrintInfo* pInfo);
@@ -46,8 +51,8 @@ protected:
 	CDC *pMemCacheDc;
 	CClientDC *pClientDc;
 	CImage m_background;
-	Plane myPlane;
 
+	GameManager mGm;
 // 生成的消息映射函数
 protected:
 	DECLARE_MESSAGE_MAP()

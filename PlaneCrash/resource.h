@@ -13,14 +13,16 @@
 #define IDB_EXPLOSION                   316
 #define IDB_BITMAP1                     317
 #define IDB_BG                          318
-#define IDB_BITMAP2                     319
 #define IDB_BG2                         319
+#define IDB_BITMAP2                     320
+#define IDB_BITMAP3                     321
+#define IDB_BOSS                        321
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        320
+#define _APS_NEXT_RESOURCE_VALUE        322
 #define _APS_NEXT_COMMAND_VALUE         32771
 #define _APS_NEXT_CONTROL_VALUE         1000
 #define _APS_NEXT_SYMED_VALUE           310

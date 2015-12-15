@@ -398,6 +398,10 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 
 IDB_BG2                 BITMAP                  "res\\background.bmp"
 
+IDB_BITMAP2             BITMAP                  "res\\bitmap2.bmp"
+
+IDB_BOSS                BITMAP                  "res\\boss.bmp"
+
 #endif    // English (United States) resources
 /////////////////////////////////////////////////////////////////////////////
 

@@ -189,21 +189,41 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="Bomb.h" />
+    <ClInclude Include="Explosion.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="ItemBase.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Plane.h" />
+    <ClInclude Include="PlaneBase.h" />
+    <ClInclude Include="PlaneBoss.h" />
     <ClInclude Include="PlaneCrash.h" />
     <ClInclude Include="PlaneCrashDoc.h" />
     <ClInclude Include="PlaneCrashView.h" />
+    <ClInclude Include="PlaneEnyne.h" />
+    <ClInclude Include="PlanePlayer.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="Bomb.cpp" />
+    <ClCompile Include="Explosion.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="ItemBase.cpp" />
     <ClCompile Include="MainFrm.cpp" />
     <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="PlaneBase.cpp" />
+    <ClCompile Include="PlaneBoss.cpp" />
     <ClCompile Include="PlaneCrash.cpp" />
     <ClCompile Include="PlaneCrashDoc.cpp" />
     <ClCompile Include="PlaneCrashView.cpp" />
+    <ClCompile Include="PlaneEnyne.cpp" />
+    <ClCompile Include="PlanePlayer.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -222,7 +242,9 @@
     <Image Include="res\ball.BMP" />
     <Image Include="res\bg.bmp" />
     <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\bitmap2.bmp" />
     <Image Include="res\bomb.bmp" />
+    <Image Include="res\boss.bmp" />
     <Image Include="res\enemy.bmp" />
     <Image Include="res\explosion.BMP" />
     <Image Include="res\me.bmp" />

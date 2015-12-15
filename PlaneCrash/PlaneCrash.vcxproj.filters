@@ -42,6 +42,36 @@
     <ClInclude Include="Plane.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlanePlayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneEnyne.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PlaneBoss.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Bomb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ball.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Explosion.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PlaneCrash.cpp">
@@ -60,6 +90,36 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Plane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlanePlayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneEnyne.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PlaneBoss.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Bomb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ItemBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Ball.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Explosion.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -105,6 +165,12 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\background.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap2.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\boss.bmp">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
